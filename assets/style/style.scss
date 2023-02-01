@@ -1,0 +1,272 @@
+@import "fonts.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: TT Commons, sans-serif, serif;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+  }
+  button {
+    border: none;
+    background: none;
+  }
+  /*BASIC CONF*/
+  /*UNIQUE CONF*/
+  .grid {
+    display: grid;
+    &_col {
+      &-6 {
+        grid-template-columns: 1fr 1fr;
+      }
+      &-4 {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      &-3 {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  }
+  .d-flex {
+    display: flex;
+  }
+  .align {
+    &-center {
+      align-items: center;
+    }
+    &-left {
+      align-items: flex-start;
+    }
+  }
+  .align-center {
+    align-items: center;
+  }
+  .justify {
+    &-center {
+      justify-content: center;
+    }
+    &-between {
+      justify-content: space-between;
+    }
+  }
+  .flex-column {
+    flex-direction: column;
+  }
+  .h-100 {
+    height: 100%;
+  }
+  .container {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  /*section header*/
+  .header {
+    position: absolute;
+    width: 100%;
+    padding-top: 61px;
+    z-index: 1;
+    &__link {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+        color: #BB8954;
+    }
+    &__space {
+        padding: 0 35px;
+    }
+  }
+    /*section header*/
+
+  /* SECTION HERO*/
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url(../images/WHISKY_img_5\ 1.png) no-repeat center/cover;
+    &__svg1 {
+        position: absolute;
+        top: 2.9%;
+        left: 1%;
+    }
+    &__svg2 {
+        position: absolute;
+        top: 2.9%;
+        right: 1%;
+    }
+    &__svg3 {
+        position: absolute;
+        bottom: 0;
+        left: 1%;
+        top: 92%;
+    }
+    &__logo {
+        position: absolute;
+        top: 27.78%;
+        left: 14.64%;
+    }
+    &__carousel {
+        position: absolute;
+        right: 2%;
+        top: 45%;
+    }
+    &__mouse {
+        position: absolute;
+        right: 50%;
+        top: 84.8%;
+        &-line {
+            position: absolute;
+            left: 40%;
+        }
+    }
+}
+
+    /* SECTION HERO*/
+/*section catalogy*/
+.catalogy {
+    position: relative;
+    height: 120vh;
+    background: url(../images/beige-wooden-textured-flooring-background\ 1.png) no-repeat center/cover;
+
+    &__title {
+        height: 111px;
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+    } 
+    &__images  {
+        display: inline-block;
+        text-align: center;
+        padding-top: 70px;
+        & img {
+            width: 260px;
+        }
+    }
+    &__titles {
+       & svg {
+        padding-top: 30px;
+        margin-left: 60px;
+       }
+    }
+    &__name-russian {
+        & svg {
+            padding-top: 30px;
+            margin-left: 35px;
+        
+        }
+        & p {
+            color:#003057;
+        }
+    }
+    
+    &__name-bog {
+        & svg {
+            padding-top: 30px;
+            margin-left: 65px;
+        }
+        & p {
+            color: #1A171B;
+        }
+    }
+    &__name-port {
+        & svg {
+            padding-top: 30px;
+            margin-left: 65px;
+        }
+        & p {
+            color: #003057;
+        }
+    }
+    &__name-sherry {
+        & svg {
+            padding-top: 30px;
+            margin-left: 65px;
+        }
+        & p {
+            color:#691C32;
+        }
+    }
+    &__desc {
+        width: 250px;
+        height: 120px;
+        margin: 40px 0px 0px 18px;
+        padding: 22px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        color: #095540;
+        background: rgba(255, 255, 255, 0.93);
+        border: 1px solid rgba(9, 85, 64, 0.09);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.02);
+        backdrop-filter: blur(2px);
+    }
+}
+/*section catalogy*/
+/*section about*/
+.about {
+    position: relative;
+    height: 115vh;
+    background: url(../images/photo_zavod\ 1.png) no-repeat center/cover;
+    &__title {
+        position: absolute;
+      
+        left: 18%;
+        right: 50%;
+        top: 33%;
+        & svg {
+            width: 200%;
+        }
+    }
+}
+/*section about*/
+/*section hero*/
+.recipe {
+  position: relative;
+  height: 125vh;
+  background: url(../images/asasa.png) no-repeat center/cover;
+  &__title {
+    height: 111px;
+    background: rgba(255, 255, 255, 0.05);
+  }
+  &__svg {
+   
+    & svg {
+      position: absolute;
+      right: 43%;
+      top: 28%;
+      
+    }
+  }
+  &__svg1 {
+    position: absolute;
+    top: 60%;
+    left: 13%;
+    & svg {
+      width: 80%;
+    }
+  }
+  &__left {
+    position: absolute;
+    bottom: 18%;
+    left: 5%;
+    & svg {
+      width: 90%;
+    }
+  }
+  &__right {
+    position: absolute;
+    bottom: 18%;
+    right: 8%;
+    & svg {
+      width: 90%;
+    }
+  }
+  
+
+}
+/*section hero*/
+
